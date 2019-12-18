@@ -1,0 +1,6 @@
+var nums=[10,20,30,40,50,60,98]
+
+function show(x){
+  alert(x)
+}
+nums.forEach(function x{alert(x)});
