@@ -5,7 +5,7 @@ def selectionsort(list):
         for j in range(i+1,n):
             if list[j]<list[smallNdx]:
                 smallNdx=j
-                
+
             if smallNdx !=i:
                 print('2')
                 tmp=list[i]
@@ -15,7 +15,9 @@ def selectionsort(list):
 list=[123,4,56,56,78,8]
 selectionsort(list)
 print(list)
-                
+
+
+
 
 
 def selectionSort(alist):
@@ -28,8 +30,8 @@ def selectionSort(alist):
        for j in range(i+1, len(alist)):
            if alist[minPosition] > alist[j]:
                minPosition = j
-                
-       # Swap the found minimum element with minPosition       
+
+       # Swap the found minimum element with minPosition
        temp = alist[i]
        alist[i] = alist[minPosition]
        alist[minPosition] = temp
