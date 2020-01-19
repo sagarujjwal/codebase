@@ -58,6 +58,7 @@ def fix(A,len):
             if A[i]!=i:
                 A[i]=-1
 
+
 A = array('i',[ 5, -1, 7, 1, 9, 3, 2, -1, 4, -1 ])
 
 fix(A, len(A))
@@ -76,3 +77,5 @@ def rotate(A,d,n):
 A=[1,2,3,4,5,6,7]
 rotate(A,2,len(A))
 print(A)
+
+sagar chaudhary
