@@ -79,3 +79,6 @@ rotate(A,2,len(A))
 print(A)
 
 sagar chaudhary
+
+
+soft rest
