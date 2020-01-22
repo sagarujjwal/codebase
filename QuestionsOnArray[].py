@@ -7,7 +7,6 @@ def fix(A,len):
         if (A[i] != -1 and A[i] != i):
             x=A[i];
 
-
             # check if desired place is not vacate
             while (A[x] != -1 and A[x] !=x):
                 #store the value from desired place
