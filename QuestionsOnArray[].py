@@ -67,20 +67,46 @@ print(A)
 
 #Write a function rotate(ar[], d, n) that rotates arr[] of size n by d elements.
 
-def rotate(A,d,n):
-    import pdb;pdb.set_trace()
-    for i in range(len(A)):
-        while (i<=len(A)-1):
-            A[i]=A[i+1]
+def leftRotatebyOne(arr, n):
+    #import pdb; pdb.set_trace();
+    tmp=arr[0]
+    for i in range(n-1):
+        arr[i]=arr[i+1]
+    arr[n-1]=tmp
+    return arr
+
+def leftRotate(arr,d,n):
+    # pdb; pdb.set_trace();
+    for i in range(d):
+        b=leftRotatebyOne(arr,n)
+    return b
 
 
-A=[1,2,3,4,5,6,7]
-rotate(A,2,len(A))
+arr=[1,2,3,4,5,6,7]
+n=len(arr)
+d=4
+# A=leftRotatebyOne(arr,n)
+A=leftRotate(arr,d,n)
+#print(A)
+
+
+def rightRotatebyoOne(arr,n):
+    tmp=arr[-1]
+    for i in range(1,n):
+        arr[-i]=arr[-i-1]
+    arr[0]=tmp
+    return arr
+
+
+def rightRotate(arr,d,n):
+    # pdb; pdb.set_trace();
+    for i in range(d):
+        b=rightRotatebyoOne(arr,n)
+    return b
+
+arr=[1,2,3,4,5,6,7]
+n=len(arr)
+d=2
+# A=rightRotatebyoOne(arr,n)
+A=rightRotate(arr,d,n)
 print(A)
-
-sagar chaudhary
-
-
-soft rest
-merge testing
-nmfbfjkdnfkl
